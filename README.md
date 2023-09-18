@@ -113,7 +113,7 @@ My key takeaways from this analysis are:
 <br>
 - There is a steady upward trend in beer consumption, despite rising beer prices.
 - Chicken consumption dropped off hard in 2001, following a sharp rise in price.
-- Rhere were significantly fewer total visitors in 2001. I suspect this is due to flight restrictions following the events of 9/11.
+- There were significantly fewer total visitors in 2001. I suspect this is due to flight restrictions following the events of 9/11.
 - Chicken prices rose sharply in 2000, while beer prices continued on a steady upward trend. I wonder if this had something to do with Germany's transition to the Euro.
 
 # STEP 5: PRESENT KEY FINDINGS TO STAKEHOLDERS
