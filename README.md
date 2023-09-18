@@ -6,11 +6,16 @@ This analysis is for Case Study #33 developed by Fabian Werkmeister and uses pub
 <br>I chose to use RStudio and Microsoft Excel for analysis and visualization.</br>
 <br>(Note: data is missing from 2020 and 2021 due to the COVID-19 pandemic.)</br>
 
-# STEP 1: IMPORT DATA
+# STEP 1: LOAD DATA AND PACKAGES
 
 Upload Oktoberfest dataset (csv file):
 ```
 df = read.csv("oktoberfest_in_total_1985_2022_clean.csv")
+```
+
+Load TidyVerse package:
+```
+library(tidyverse)
 ```
 
 # STEP 2: CLEAN AND ORGANIZE DATA
@@ -24,9 +29,11 @@ For this step, I used Excel to:
 
 # STEP 3: CONDUCT DESCRIPTIVE ANALYSIS
 
-Descriptive analysis on total_visitors_millions:
+Descriptive analysis:
 ```
 summary(df$total_visitors_millions)
+summary(df$beer_consumed_liters_millions)
+summary(df$average_visitors_per_day_thousands)
 ```
 
 Inspect beer price and chicken price over the years:
