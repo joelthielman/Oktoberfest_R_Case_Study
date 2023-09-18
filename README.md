@@ -118,9 +118,10 @@ My key takeaways from this analysis are:
 
 # STEP 5: PRESENT KEY FINDINGS TO STAKEHOLDERS
 
-![Cyclistic1](Cyclistic1.png)
-![Cyclistic2](Cyclistic2.png)
-![Cyclistic3](Cyclistic3.png)
-![Cyclistic4](Cyclistic4.png)
-![Cyclistic5](Cyclistic5.png)
-![Cyclistic6](Cyclistic6.png)
+![Oktoberfest_ppt.png](Oktoberfest_ppt.png)
+![Oktoberfest_ppt.png2](Oktoberfest_ppt2.png)
+![Oktoberfest_ppt.png3](Oktoberfest_ppt3.png)
+![Oktoberfest_ppt.png4](Oktoberfest_ppt4.png)
+![Oktoberfest_ppt.png5](Oktoberfest_ppt5.png)
+![Oktoberfest_ppt.png6](Oktoberfest_ppt6.png)
+![Oktoberfest_ppt.png7](Oktoberfest_ppt7.png)
