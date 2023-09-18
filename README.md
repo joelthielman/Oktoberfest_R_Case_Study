@@ -6,14 +6,14 @@ This analysis is for Case Study #33 developed by Fabian Werkmeister and uses pub
 <br>I chose to use RStudio and Microsoft Excel for analysis and visualization.</br>
 <br>(Note: data is missing from 2020 and 2021 due to the COVID-19 pandemic.)</br>
 
-#STEP 1: IMPORT DATA
+# STEP 1: IMPORT DATA
 
 Upload Oktoberfest dataset (csv file):
 ```
 df = read.csv("oktoberfest_in_total_1985_2022_clean.csv")
 ```
 
-#STEP 2: CLEAN AND ORGANIZE DATA
+# STEP 2: CLEAN AND ORGANIZE DATA
 
 For this step, I used Excel to: 
 <br>
@@ -22,7 +22,7 @@ For this step, I used Excel to:
 - change columns to the correct datatype
 - add a column for beer consumed per person
 
-#STEP 3: CONDUCT DESCRIPTIVE ANALYSIS
+# STEP 3: CONDUCT DESCRIPTIVE ANALYSIS
 
 Descriptive analysis on total_visitors_millions:
 ```
@@ -107,7 +107,7 @@ ggplot(df, aes(x = year, y = beer_consumed_per_person_liters)) +
 
 ![per_person_plot.png](per_person_plot.png)
 
-#STEP 4: KEY TAKEAWAYS
+# STEP 4: KEY TAKEAWAYS
 
 My key takeaways from this analysis are:
 <br>
@@ -116,7 +116,7 @@ My key takeaways from this analysis are:
 - There were significantly fewer total visitors in 2001. I suspect this is due to flight restrictions following the events of 9/11.
 - Chicken prices rose sharply in 2000, while beer prices continued on a steady upward trend. I wonder if this had something to do with Germany's transition to the Euro.
 
-#STEP 5: PRESENT KEY FINDINGS TO STAKEHOLDERS
+# STEP 5: PRESENT KEY FINDINGS TO STAKEHOLDERS
 
 ![Oktoberfest_ppt.png](Oktoberfest_ppt.png)
 ![Oktoberfest_ppt.png2](Oktoberfest_ppt2.png)
