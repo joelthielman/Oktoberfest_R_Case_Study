@@ -1,4 +1,17 @@
+library(tidyverse)
+setwd("~/Portfolio/Oktoberfest")
+
 df = read.csv("oktoberfest_in_total_1985_2022_clean.csv")
+
+summary(df$total_visitors_millions)
+summary(df$beer_consumed_liters_millions)
+summary(df$average_visitors_per_day_thousands)
+
+df %>%
+  select(year, beer_price_euros, chicken_price_euros)
+
+df %>%
+  select(year, beer_consumed_liters_millions, chicken_consumed_units_thousands)
 
 ylim.prim = c(0:800)
 ylim.sec = c(0, 14)
@@ -10,7 +23,8 @@ scaleFactor2 = max(df$chicken_consumed_units_thousands) / max(df$chicken_price_e
 ggplot(df, aes(year)) +
   geom_col(aes(y = beer_consumed_liters_millions), alpha = 0.5) +
   geom_line(aes(y = beer_price_euros * scaleFactor), color = "darkgreen", linewidth = 1.2) +
-  scale_y_continuous(breaks = 0:8, name = "Beer consumed (millions of liters)", sec.axis = sec_axis(~./scaleFactor, breaks = 0:14, name = "Price (euros)")) +
+  scale_y_continuous(breaks = 0:8, name = "Beer consumed (millions of liters)",
+                     sec.axis = sec_axis(~./scaleFactor, breaks = 0:14, name = "Price (euros)")) +
   scale_x_continuous(name = "Year", breaks = 1985:2022) +
   theme(axis.line.y.right = element_line(color = "darkgreen"), 
         axis.ticks.y.right = element_line(color = "darkgreen"),
@@ -26,7 +40,8 @@ ggplot(df, aes(year)) +
 ggplot(df, aes(year)) +
   geom_col(aes(y = chicken_consumed_units_thousands), alpha = 0.5) +
   geom_line(aes(y = chicken_price_euros * scaleFactor2), color = "brown", linewidth = 1.2) +
-  scale_y_continuous(breaks = c(0,100,200,300,400,500,600,700,800), name = "Chicken consumed (thousands of units)", sec.axis = sec_axis(~./scaleFactor2, breaks = 0:14, name = "Price (euros)")) +
+  scale_y_continuous(breaks = c(0,100,200,300,400,500,600,700,800), name = "Chicken consumed (thousands of units)",
+                     sec.axis = sec_axis(~./scaleFactor2, breaks = 0:14, name = "Price (euros)")) +
   scale_x_continuous("Year", breaks = 1985:2022) +
   theme(axis.line.y.right = element_line(color = "brown"), 
         axis.ticks.y.right = element_line(color = "brown"),
