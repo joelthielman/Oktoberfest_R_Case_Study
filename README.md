@@ -1,4 +1,4 @@
-#Oktoberfest R Case Study
+# Oktoberfest R Case Study
 
 ![Oktoberfest.png](Oktoberfest.png)
 
@@ -6,7 +6,7 @@ This analysis is for Case Study #33 developed by Fabian Werkmeister and uses pub
 <br>I chose to use RStudio and Microsoft Excel for analysis and visualization.</br>
 <br>(Note: data is missing from 2020 and 2021 due to the COVID-19 pandemic.)</br>
 
-# STEP 1: LOAD DATA AND PACKAGES
+## Step 1: Load data and packages
 
 Upload Oktoberfest dataset (csv file):
 ```
@@ -18,7 +18,7 @@ Load TidyVerse package:
 library(tidyverse)
 ```
 
-# STEP 2: CLEAN AND ORGANIZE DATA
+## Step 2: Clean and organize data
 
 For this step, I used Excel to: 
 <br>
@@ -27,7 +27,7 @@ For this step, I used Excel to:
 - change columns to the correct datatype
 - add a column for beer consumed per person
 
-# STEP 3: CONDUCT DESCRIPTIVE ANALYSIS
+## Step 3: Conduct descriptive analysis
 
 Descriptive analysis:
 ```
@@ -114,7 +114,7 @@ ggplot(df, aes(x = year, y = beer_consumed_per_person_liters)) +
 
 ![per_person_plot.png](per_person_plot.png)
 
-# STEP 4: KEY TAKEAWAYS
+## Step 4: Key takeaways
 
 My key takeaways from this analysis are:
 <br>
@@ -123,7 +123,7 @@ My key takeaways from this analysis are:
 - There were significantly fewer total visitors in 2001. I suspect this is due to flight restrictions following the events of 9/11.
 - Chicken prices rose sharply in 2000, while beer prices continued on a steady upward trend. I wonder if this had something to do with Germany's transition to the Euro.
 
-# STEP 5: PRESENT KEY FINDINGS TO STAKEHOLDERS
+## Step 5: Present key findings to stakeholders
 
 ![Oktoberfest_ppt.png](Oktoberfest_ppt.png)
 ![Oktoberfest_ppt.png2](Oktoberfest_ppt2.png)
